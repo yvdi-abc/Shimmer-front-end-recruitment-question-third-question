@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>明日方舟干员攻击范围</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.range-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+}
+
+.space {
+    width: 30px;
+    height: 30px;
+    color: #f8f9fa;
+}
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #999;
+}
+
+.blue {
+  background-color: #42a5f5;
+}
+
+.cross-grid {
+  grid-template-columns: repeat(5, 30px);
+  grid-template-rows: repeat(5, 30px);
+}
+
+.irregular-grid {
+  grid-template-columns: repeat(5, 30px);
+  grid-template-rows: repeat(5, 30px);
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 第一个攻击范围 -->
+    <div class="range-box">
+      <div class="grid cross-grid">
+        <!-- 第一行 -->
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <!-- 第二行 -->
+        <div class="space"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <!-- 第三行 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <!-- 第四行 -->
+        <div class="space"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <!-- 第五行 -->
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+      </div>
+    </div>
+
+    <!-- 第二个攻击范围 -->
+    <div class="range-box">
+      <div class="grid irregular-grid">
+        <!-- 第一行 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <!-- 第二行 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <!-- 第三行 -->
+        <div class="blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <!-- 第四行 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <!-- 第五行 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
